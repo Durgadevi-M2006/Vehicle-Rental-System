@@ -1,0 +1,168 @@
+/* ================= GLOBAL ================= */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(120deg, #f5f7fa, #e4ecff);
+  overflow-x: hidden;
+}
+
+/* Smooth page fade */
+.page {
+  animation: pageFade 0.6s ease-in-out;
+}
+
+@keyframes pageFade {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+  background: linear-gradient(135deg, #6C63FF, #36A2EB);
+  padding: 15px;
+  color: white;
+  font-weight: 600;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* ================= CARD ================= */
+.card {
+  border: none;
+  border-radius: 18px;
+  padding: 15px;
+  background: white;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  animation: cardEntry 0.5s ease;
+}
+
+@keyframes cardEntry {
+  from {
+    opacity: 0;
+    transform: translateY(40px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* Gradient Cards */
+.gradient-card {
+  background: linear-gradient(135deg, #6C63FF, #FF6584);
+  color: white;
+}
+
+/* Glow effect */
+.glow-card:hover {
+  box-shadow: 0 0 25px rgba(108, 99, 255, 0.6);
+}
+
+/* ================= BUTTON ================= */
+.btn {
+  border-radius: 30px !important;
+  padding: 10px 20px;
+  border: none;
+  transition: all 0.3s ease !important;
+}
+
+/* Animated gradient button */
+.btn-animate {
+  background: linear-gradient(270deg, #6C63FF, #36A2EB, #FF6584);
+  background-size: 600% 600%;
+  color: white;
+  animation: gradientMove 5s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% }
+  50% { background-position: 100% }
+  100% { background-position: 0% }
+}
+
+.btn:hover {
+  transform: translateY(-3px) scale(1.05);
+}
+
+/* ================= TABLE ================= */
+.table {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.table thead {
+  background: linear-gradient(135deg, #6C63FF, #36A2EB);
+  color: white;
+}
+
+.table tbody tr {
+  transition: 0.3s;
+}
+
+.table tbody tr:hover {
+  background: #eef2ff;
+  transform: scale(1.01);
+}
+
+/* ================= INPUT ================= */
+input, select {
+  border-radius: 12px !important;
+  border: 1px solid #ddd;
+  transition: 0.3s;
+}
+
+input:focus, select:focus {
+  border-color: #6C63FF;
+  box-shadow: 0 0 8px rgba(108, 99, 255, 0.3);
+}
+
+/* ================= IMAGE ================= */
+img {
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+/* ================= FLOATING ANIMATION ================= */
+.float {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+/* ================= CLICKABLE CARD ================= */
+.click-card {
+  cursor: pointer;
+}
+
+/* ================= LOADER (optional) ================= */
+.loader {
+  border: 5px solid #eee;
+  border-top: 5px solid #6C63FF;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% { transform: rotate(360deg); }
+}

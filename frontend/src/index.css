@@ -1,0 +1,76 @@
+body{
+background:#f6f9ff;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+/* Navbar */
+
+.navbar{
+background:#4f7cff;
+}
+
+.navbar-brand{
+font-weight:bold;
+font-size:22px;
+}
+
+/* Hero section */
+
+.hero{
+background:linear-gradient(120deg,#e8f0ff,#f9fcff);
+padding:80px;
+text-align:center;
+border-radius:20px;
+}
+
+/* Vehicle cards */
+
+.card{
+border-radius:20px;
+transition:0.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* Vehicle image */
+
+.vehicle-img{
+height:200px;
+object-fit:cover;
+border-radius:20px 20px 0 0;
+}
+
+/* Booking page round image */
+
+.booking-img{
+width:220px;
+height:220px;
+border-radius:50%;
+object-fit:cover;
+box-shadow:0 10px 25px rgba(0,0,0,0.2);
+transition:0.4s;
+}
+
+.booking-img:hover{
+transform:scale(1.05);
+}
+
+/* Buttons */
+
+.btn-primary{
+background:#4f7cff;
+border:none;
+}
+
+.btn-primary:hover{
+background:#3456d1;
+}
+
+.total-price{
+color:#ff4b2b;
+font-weight:bold;
+font-size:22px;
+}
