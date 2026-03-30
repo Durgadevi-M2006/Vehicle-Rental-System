@@ -1,0 +1,124 @@
+.home-container {
+
+height:100vh;
+
+background-image:url("https://images.unsplash.com/photo-1503376780353-7e6692767b70");
+
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+}
+
+/* Overlay */
+
+.overlay{
+
+background:linear-gradient(
+rgba(0,0,0,0.65),
+rgba(0,0,0,0.75)
+);
+
+height:100%;
+width:100%;
+
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+
+text-align:center;
+color:white;
+
+backdrop-filter:blur(2px);
+
+}
+
+/* Title */
+
+.title{
+
+font-size:50px;
+font-weight:bold;
+
+animation:fadeIn 2s ease-in-out;
+
+}
+
+/* Subtitle */
+
+.subtitle{
+
+font-size:20px;
+margin-top:10px;
+opacity:0.9;
+
+}
+
+/* Buttons container */
+
+.buttons{
+
+margin-top:30px;
+
+}
+
+/* Button style */
+
+.buttons button{
+
+padding:12px 25px;
+font-size:18px;
+
+border-radius:8px;
+
+transition:all 0.3s ease;
+
+}
+
+/* Hover effect */
+
+.buttons button:hover{
+
+transform:scale(1.1);
+
+}
+
+/* Animation */
+
+@keyframes fadeIn{
+
+0%{
+opacity:0;
+transform:translateY(-20px);
+}
+
+100%{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+/* Mobile Responsive */
+
+@media (max-width:768px){
+
+.title{
+font-size:32px;
+}
+
+.subtitle{
+font-size:16px;
+}
+
+.buttons button{
+font-size:16px;
+padding:10px 20px;
+}
+
+}
