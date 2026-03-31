@@ -15,7 +15,7 @@ import Profile from "./pages/Profile";
 import About from "./pages/About";
 import Terms from "./pages/Terms";
 import ForgotPassword from "./pages/ForgotPassword"
-import Navbar from "./components/NavBar"; // ✅ FIXED
+import Navbar from "./components/Navbar"; // ✅ FIXED
 import Footer from "./components/Footer";
 import PaymentHistory from "./pages/PaymentHistory";
 
